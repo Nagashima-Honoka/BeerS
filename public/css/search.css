@@ -1,0 +1,39 @@
+.re-card{
+    width:31.333333%;
+    display: inline-block;
+}
+
+/* いいね */
+.f-box{
+    display: flex;
+    padding: 1rem 1rem
+}
+.btn-good{
+    display: inline-block;
+    padding: 0 8px;
+    cursor: pointer;
+}
+.btn-good:hover{
+    color: #f44336;
+}
+.active{
+    color: #f44336;
+}
+.btn-good .active{
+    color: #f44336;
+}
+
+/* h3タイトル */
+.search-title{
+    display: block;
+    margin: 3rem 0;
+    position: relative;
+    padding: 0.25em 0;
+  }
+.search-title:after {
+    content: "";
+    display: block;
+    height: 4px;
+    background: -webkit-linear-gradient(to right, rgb(230, 90, 90), transparent);
+    background: linear-gradient(to right, rgb(230, 90, 90), transparent);
+}

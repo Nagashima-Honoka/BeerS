@@ -1,0 +1,114 @@
+.yesno {
+    height: 250px;
+    position:relative;
+    padding:0;
+    margin:0;
+}
+.yesno ul li {
+    list-style: none;
+    float: left;
+    text-align: center;
+    display: block;
+    font-size: 250%;
+    color: #333A40;
+}
+.positionFit {
+    position:absolute;
+    left: 0px;
+    top: 20px;
+}
+.col_1 li {
+    width: 99%;
+    margin: 1%;
+}
+.col_2 li {
+    width: 48%;
+    margin: 1%;
+}
+.col_3 li {
+    width: 31%;
+    margin: 1%;
+}
+.yesno ul li a {
+    color: #FFF;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    background-color: #333A40;
+    padding: 15px 0;
+}
+.yesno div {
+    clear: both;
+    width: 100%;
+    }
+    .yesno ul li a:hover {
+    background-color: #000;
+}
+
+/* chart_todo */
+.gallery {
+	padding: 0;
+	display: flex;
+    flex-wrap: wrap;
+	margin: 60px 0;
+}
+.gallery .gallery-item {
+	list-style: none;
+	width: 50%;
+	padding: 15px;
+	position: relative;
+	/* アニメーションに関数プロパティ */
+	opacity: 0; 	/* フェードインしたいので最初は非表示 */
+	bottom: -15px; 	/* 下から上に移動したいので最初はマイナス値 */
+	transition: 1s; /* 1秒かけてアニメーション */
+}
+.gallery .gallery-item figure {
+	margin: 0;
+}
+.gallery .gallery-item img {
+	max-width: 100%;
+	height: auto;
+	box-shadow: 0 5px 20px 0px rgb(0 0 0 / 30%);
+}
+.gallery .gallery-item figcaption {
+	font-size: 1.5vw;
+    margin-top: 1rem;
+}
+
+/* スクロールした時に追加されるclass */
+.gallery .gallery-item.fadein {
+	opacity: 1;
+	bottom: 0;
+}
+
+/* chart.phpの質問フォントサイズ */
+.chart-font{
+    font-size: 1.5rem;
+}
+
+/* video レスポンシブ対応 */
+video{
+    width: 100%;
+}
+@media screen and (min-width: 576px) {
+    video {
+      max-width: 576px;
+    }
+}
+@media screen and (min-width: 768px) {
+    video {
+      max-width: 768px;
+    }
+}@media screen and (min-width: 992px) {
+    video {
+      max-width: 992px;
+    }
+}@media screen and (min-width: 1200px) {
+    video {
+      max-width: 1200px;
+    }
+}@media screen and (min-width: 1400px) {
+    video {
+      max-width: 1400px;
+    }
+}

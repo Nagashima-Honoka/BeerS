@@ -1,0 +1,204 @@
+.container {
+    max-width: 960px;
+  }
+  
+  /*
+   * Custom translucent site header
+   */
+  
+  .site-header {
+    background-color: rgba(0, 0, 0, .85);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+  }
+  .site-header a {
+    color: #8e8e8e;
+    transition: color .15s ease-in-out;
+  }
+  .site-header a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /*
+   * Dummy devices (replace them with your own or something else entirely!)
+   */
+  
+  .product-device {
+    position: absolute;
+    right: 10%;
+    bottom: -30%;
+    width: 300px;
+    height: 540px;
+    background-color: #333;
+    border-radius: 21px;
+    transform: rotate(30deg);
+  }
+  
+  .product-device::before {
+    position: absolute;
+    top: 10%;
+    right: 10px;
+    bottom: 10%;
+    left: 10px;
+    content: "";
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 5px;
+  }
+  
+  .product-device-2 {
+    top: -25%;
+    right: auto;
+    bottom: 0;
+    left: 5%;
+    background-color: #e5e5e5;
+  }
+  
+  
+  /*
+   * Extra utilities
+   */
+  
+  .flex-equal > * {
+    flex: 1;
+  }
+  @media (min-width: 768px) {
+    .flex-md-equal > * {
+      flex: 1;
+    }
+  }
+
+  /* トップイメージ */
+  .topimg{
+    position: relative;
+  }
+  *,
+  :after,
+  :before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .scroll-down {
+    opacity: 1;
+    -webkit-transition: all .5s ease-in 3s;
+    transition: all .5s ease-in 3s;
+  }
+  
+  .scroll-down {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -16px;
+    display: block;
+    width: 32px;
+    height: 32px;
+    border: 2px solid #FFF;
+    background-size: 14px auto;
+    border-radius: 50%;
+    z-index: 2;
+    -webkit-animation: bounce 2s infinite 2s;
+    animation: bounce 2s infinite 2s;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    transform: scale(1)
+  }
+  
+  .scroll-down:before {
+      position: absolute;
+      top: calc(50% - 8px);
+      left: calc(50% - 6px);
+      transform: rotate(-45deg);
+      display: block;
+      width: 12px;
+      height: 12px;
+      content: "";
+      border: 2px solid white;
+      border-width: 0px 0 2px 2px;
+  }
+  
+  @keyframes bounce {
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+    60% {
+      -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+      transform: translateY(-5px);
+    }
+  }
+
+  .top-beer{
+    margin: 0 auto;
+  }
+
+/* 彩の国ビールを紹介 */
+.row-original{
+  display: flex;
+  margin-top: 1rem;
+}
+
+/* mouseover */
+  .moimg1 {
+    overflow: hidden;
+  }
+  .moimg1 img {
+    display: block;
+    transition: 0.5s;
+  }
+  .moimg1 img:hover {
+    transform: scale(1.1, 1.1);
+  }
+
+  .lead-original{
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+/* いいね */
+.f-box{
+  display: flex;
+}
+.btn-good{
+  display: inline-block;
+  padding: 0 8px;
+  cursor: pointer;
+}
+.btn-good:hover{
+  color: #f44336;
+}
+.active{
+  color: #f44336;
+}
+.btn-good .active{
+  color: #f44336;
+}
+
+.flex-recard{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.flex-card{
+  width: 32%;
+}
+
+/* edit 一言Comment */
+.kakomi {
+  margin: 2em auto;
+  padding: 1em;
+  background-color: transparent; /* 背景色 */
+  border: 1px solid rgb(49, 48, 48); /* 枠線 */
+}
