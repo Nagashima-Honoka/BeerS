@@ -15,6 +15,7 @@
 http://localhost:8888/Users/index.php
 
 権限は2通りあります。
+
 **1. 管理者**
 Users name:honoka(管理者)
 Email adress: test@test.com
